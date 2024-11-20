@@ -1,0 +1,391 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+   
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  p{
+    color: black;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 36px;
+    color: rgb(8, 8, 175);
+  }
+
+  h2{
+    font-size: 30px;
+    color: rgb(8, 8, 175);
+  }
+
+  h3{
+    font-size: 22px;
+    color: rgb(8, 8, 175);
+  }
+
+  .parent-container{
+    padding: 0 100px;
+  }
+  
+  header {
+    background: #333;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  nav ul li a:hover{
+    color: rgb(8, 8, 175);;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+  
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+
+  .hero p{
+    margin: 20px 0;
+  }
+
+  .hero a{
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+    /* margin-top: 10px; */
+    display: inline-block;
+    border-radius:12px ;
+
+  }
+
+  .hero a:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .services, .about, .contact {
+    padding: 50px 20px;
+  }
+  
+  .services h2, .about h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-item {
+    background: #f4f4f4;
+    padding: 20px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+  }
+
+  .service-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .service-item p{
+    padding-top: 10px;
+  }
+
+  .about .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about a{
+    color: black;
+  }
+
+  .about a:hover{
+    font-weight: 600;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .input-group{
+    display: flex;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* align-items: center; */
+    gap: 10px;
+    border-radius: 13px;
+    flex-direction: column;
+  }
+
+  .input-group input{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+
+  textarea{
+    width: 100%;
+  }
+
+  #contactForm button{
+    padding: 20px 0;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  .contact-form, .contact-map {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .contact-map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  
+  footer {
+    background: #333;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  footer p{
+    color: white;
+  }
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+
+  /* slider */
+
+  .swiper-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+ 
+  .testimonial {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .testimonial p:last-child {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #777;
+  }
+  
+
+  /* For smaller devices like tablets (max-width: 768px) */
+@media (max-width: 768px) {
+
+    header{
+        padding: 20px 20px;
+    }
+
+    .parent-container{
+        padding: 0 20px;
+    }
+   
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .hero-image img {
+      max-width: 80%;
+    }
+  
+    .service-item {
+      width: 100%; /* Reduce service item width */
+      margin: 20px auto;
+    }
+  
+    .contact-content {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .contact-form, .contact-map {
+      margin: 0 auto 20px;
+      /* flex: 1; */
+      width: 100%;
+    }
+
+
+    /* Mobile Styles */
+@media (max-width: 768px) {
+    nav {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  
+    nav ul li {
+      margin: 15px 0;
+      padding: 10px;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  
+    nav.active {
+      display: block;
+    }
+  }
+  
+  /* Cross Icon for Close Button */
+  .menu-icon.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 6px;
+  }
+  
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+  }
+  }
+  
+  /* For smaller mobile devices (max-width: 
+  
